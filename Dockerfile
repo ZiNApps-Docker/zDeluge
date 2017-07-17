@@ -8,4 +8,4 @@ RUN apt update && apt upgrade -y && \
     apt install deluged deluge-webui -y
 	
 EXPOSE 8112
-CMD ["bash"]
+CMD ["deluge-web"]
