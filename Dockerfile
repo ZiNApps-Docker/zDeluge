@@ -1,9 +1,9 @@
 FROM ubuntu
-MAINTAINER Sarfaraz Ali Khan <mrkhan1417@gmail.com>
+LABEL maintainer="Sarfaraz Ali Khan mrkhan1417@gmail.com"
 
 RUN apt update && apt upgrade -y && \
     apt install software-properties-common -y && \
-    add-apt-repository ppa:deluge-team/ppa -y && \
+    add-apt-repository ppa:deluge-team/stable -y && \
     apt update && \
     apt install deluged deluge-webui -y
 	
